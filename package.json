@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start:stdio": "node dist/src/index.js",
+    "start:http": "node dist/src/index.js --http",
     "build": "eslint --fix ./src && prettier --write \"src/**/*.ts\" && tsc",
     "prepack": "npm run build",
     "test": "vitest",
